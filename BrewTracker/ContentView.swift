@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    var coffee: [Coffee] = []
+    
     var body: some View {
         NavigationView {
-            List {
+            List(coffee) { coffee in
                 HStack {
                     Image(systemName: "photo")
-                    VStack {
-                        Text("Coffee Beans")
-                        Text("Roaster")
+                    VStack(alignment: .leading) {
+                        Text(coffee.name)
+                        Text(coffee.roaster)
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
                 }
+                .navigationTitle(Text("My Coffee"))
             }
-            .navigationBarTitle(Text("Coffee Beans"))
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(coffee: testData)
     }
 }
