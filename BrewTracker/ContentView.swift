@@ -13,13 +13,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(coffee) { coffee in
-                HStack {
-                    Image(systemName: "photo")
-                    VStack(alignment: .leading) {
-                        Text(coffee.name)
-                        Text(coffee.roaster)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+                NavigationLink(destination: Text(coffee.name)) {
+                    HStack {
+                        Image(systemName: "photo")
+                        VStack(alignment: .leading) {
+                            Text(coffee.name)
+                            Text(coffee.roaster)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
                     }
                 }
                 .navigationTitle(Text("My Coffee"))

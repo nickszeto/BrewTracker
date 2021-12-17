@@ -12,6 +12,7 @@
 		A9C8066A276C324100D1D61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C80669276C324100D1D61A /* Assets.xcassets */; };
 		A9C8066D276C324100D1D61A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C8066C276C324100D1D61A /* Preview Assets.xcassets */; };
 		A9C80674276C3D9200D1D61A /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80673276C3D9200D1D61A /* Coffee.swift */; };
+		A9C80676276CCA0100D1D61A /* CoffeeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A9C80669276C324100D1D61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C8066C276C324100D1D61A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9C80673276C3D9200D1D61A /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				A9C80665276C324100D1D61A /* BrewTrackerApp.swift */,
 				A9C80667276C324100D1D61A /* ContentView.swift */,
+				A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */,
 				A9C80673276C3D9200D1D61A /* Coffee.swift */,
 				A9C80669276C324100D1D61A /* Assets.xcassets */,
 				A9C8066B276C324100D1D61A /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C80676276CCA0100D1D61A /* CoffeeDetail.swift in Sources */,
 				A9C80668276C324100D1D61A /* ContentView.swift in Sources */,
 				A9C80666276C324100D1D61A /* BrewTrackerApp.swift in Sources */,
 				A9C80674276C3D9200D1D61A /* Coffee.swift in Sources */,
