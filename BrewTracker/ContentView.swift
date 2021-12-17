@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                HStack {
+                    Image(systemName: "photo")
+                    VStack {
+                        Text("Coffee Beans")
+                        Text("Roaster")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Coffee Beans"))
+        }
     }
 }
 
