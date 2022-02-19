@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var coffee: [Coffee] = []
+    //var coffeeDetail : CoffeeDetail
     
     var body: some View {
+        
         NavigationView {
             List(coffee) { coffee in
                 NavigationLink(destination: Text(coffee.name)) {
@@ -24,7 +27,7 @@ struct ContentView: View {
                         }
                     }
                 }
-                .navigationTitle(Text("My Coffee"))
+                .navigationTitle(Text("Coffee Beans"))
             }
         }
     }
@@ -32,6 +35,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(coffee: testData)
+        ContentView(coffee: coffeeData)
+            
     }
 }

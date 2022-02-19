@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A96636B9277D5B5600A71C05 /* ReceipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96636B8277D5B5600A71C05 /* ReceipeDetail.swift */; };
 		A9C80666276C324100D1D61A /* BrewTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80665276C324100D1D61A /* BrewTrackerApp.swift */; };
 		A9C80668276C324100D1D61A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80667276C324100D1D61A /* ContentView.swift */; };
 		A9C8066A276C324100D1D61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C80669276C324100D1D61A /* Assets.xcassets */; };
 		A9C8066D276C324100D1D61A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C8066C276C324100D1D61A /* Preview Assets.xcassets */; };
 		A9C80674276C3D9200D1D61A /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80673276C3D9200D1D61A /* Coffee.swift */; };
 		A9C80676276CCA0100D1D61A /* CoffeeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */; };
+		A9C8067827720FC800D1D61A /* Brew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8067727720FC800D1D61A /* Brew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A96636B8277D5B5600A71C05 /* ReceipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeDetail.swift; sourceTree = "<group>"; };
 		A9C80662276C324100D1D61A /* BrewTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C80665276C324100D1D61A /* BrewTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTrackerApp.swift; sourceTree = "<group>"; };
 		A9C80667276C324100D1D61A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +26,7 @@
 		A9C8066C276C324100D1D61A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9C80673276C3D9200D1D61A /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetail.swift; sourceTree = "<group>"; };
+		A9C8067727720FC800D1D61A /* Brew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,12 @@
 		A9C80664276C324100D1D61A /* BrewTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A96636B8277D5B5600A71C05 /* ReceipeDetail.swift */,
 				A9C80665276C324100D1D61A /* BrewTrackerApp.swift */,
 				A9C80667276C324100D1D61A /* ContentView.swift */,
 				A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */,
 				A9C80673276C3D9200D1D61A /* Coffee.swift */,
+				A9C8067727720FC800D1D61A /* Brew.swift */,
 				A9C80669276C324100D1D61A /* Assets.xcassets */,
 				A9C8066B276C324100D1D61A /* Preview Content */,
 			);
@@ -143,9 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C8067827720FC800D1D61A /* Brew.swift in Sources */,
 				A9C80676276CCA0100D1D61A /* CoffeeDetail.swift in Sources */,
 				A9C80668276C324100D1D61A /* ContentView.swift in Sources */,
 				A9C80666276C324100D1D61A /* BrewTrackerApp.swift in Sources */,
+				A96636B9277D5B5600A71C05 /* ReceipeDetail.swift in Sources */,
 				A9C80674276C3D9200D1D61A /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BrewTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BrewTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

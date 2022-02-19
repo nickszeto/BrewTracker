@@ -21,7 +21,7 @@ struct Coffee : Identifiable {
     
 }
 #if DEBUG
-let testData = 	[
+let coffeeData = 	[
     Coffee(name: "Los Brumas", roaster:"Nylon Coffee", roastDate:"01/12/2021",weight: 200, brewType: "Filter"),
     Coffee(name: "La Estrella", roaster:"Common Man Coffee Roasters", roastDate:"01/12/2021",weight: 250,brewType: "Filter" ),
     Coffee(name: "Esmeralda", roaster:"Five Oars Coffee Roasters", roastDate:"01/12/2021",weight: 150, brewType: "Filter"),
