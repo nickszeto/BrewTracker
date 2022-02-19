@@ -14,22 +14,35 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationView {
-            List(coffee) { coffee in
-                NavigationLink(destination: Text(coffee.name)) {
-                    HStack {
-                        Image(systemName: "photo")
-                        VStack(alignment: .leading) {
-                            Text(coffee.name)
-                            Text(coffee.roaster)
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
+        TabView {
+            NavigationView {
+                List(coffee) { coffee in
+                    NavigationLink(destination: Text(coffee.name)) {
+                        HStack {
+                            Image(systemName: "photo")
+                            VStack(alignment: .leading) {
+                                Text(coffee.name)
+                                Text(coffee.roaster)
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                            }
                         }
                     }
+                    .navigationTitle(Text("Coffee Beans"))
+                    
                 }
-                .navigationTitle(Text("Coffee Beans"))
+            }
+            .tabItem{
+                Image(systemName: "1.circle")
+                Text("Home")
             }
         }
+        
+        
+        
+        
+        
+        
     }
 }
 
