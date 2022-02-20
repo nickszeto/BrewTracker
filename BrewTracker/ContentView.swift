@@ -19,7 +19,7 @@ struct ContentView: View {
                 List(coffee) { coffee in
                     NavigationLink(destination: Text(coffee.name)) {
                         HStack {
-                            Image(systemName: "photo")
+                            Image(systemName: "leaf")
                             VStack(alignment: .leading) {
                                 Text(coffee.name)
                                 Text(coffee.roaster)
@@ -33,9 +33,16 @@ struct ContentView: View {
                 }
             }
             .tabItem{
-                Image(systemName: "1.circle")
-                Text("Home")
+                Label ("My Coffee", systemImage: "list.dash")
             }
+            CoffeeDetail()
+                .tabItem {
+                    Label("Coffee Beans", systemImage: "leaf.circle")
+                }	
+            ReceipeDetail()
+                .tabItem {
+                    Label("Receipe", systemImage: "square.and.pencil")
+                }
         }
         
         

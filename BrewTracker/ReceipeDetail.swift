@@ -10,31 +10,22 @@ import SwiftUI
 struct ReceipeDetail: View {
     var body: some View {
         VStack (alignment:.leading) {
-            Text("Receipe")
+            Text("Brew")
                 .font(.title)
-            Text("Bean")
+            Text("Espresso")
                 .font(.title2)
             
-            HStack {
-                VStack (alignment:.leading){
+            VStack {
+                HStack {
                     Text("Dose")
-                        .font(.headline)
-                    Text("Dose Value")
+                    Spacer()
+                    Text("18g")
                 }
-                Spacer()
-                
-                VStack (alignment:.leading){
+                HStack {
                     Text("Yield")
-                        .font(.headline)
-                    Text("Yield Value")
+                    Spacer()
+                    Text("36g")
                 }
-                Spacer()
-                VStack (alignment:.leading){
-                    Text("Time")
-                        .font(.headline)
-                    Text("Time Value")
-                }
-                
             }
         }
         .padding(.horizontal)

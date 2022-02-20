@@ -70,7 +70,14 @@ struct CoffeeDetail: View {
             }
             .padding(.horizontal)
             .font(.body)
+            
+            
         }
+        .padding(.horizontal)
+        .overlay(
+            RoundedRectangle(cornerRadius:16)
+                .stroke(Color.gray, lineWidth:4)
+        )
     }
 }
 
