@@ -10,74 +10,85 @@ import SwiftUI
 struct CoffeeDetail: View {
      
     var body: some View {
-             
-        VStack (alignment: .leading){
-            VStack (alignment:.leading) {
-                HStack {
-                    Text("Nicaragua")
-                        .font(.subheadline)
-                }
-                HStack {
-                    Text("SANTA MARIA de LOURDES")
-                        .font(.title)
-                }
-                HStack {
-                    Text("Sultanas, Dried Peach, Pine Nuts")
-                        .font(.subheadline)
-                }
-                
-            }
-            .padding(.horizontal)
-            
-            Divider()
-            
+        
+        NavigationView {
             VStack (alignment: .leading){
-                HStack {
-                    Text("Nylon Coffee Roaster")
-                }
-                .font(.headline)
-                .foregroundColor(Color.black)
+                Image("BuenaVista")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.horizontal)
+                    .clipShape(Circle())
                 
-                HStack {
-                    Text("Espresso Roast")
-                    Spacer()
-                    Text("300g")
+                VStack (alignment:.leading) {
+                    HStack {
+                        Text("Nicaragua")
+                            .font(.subheadline)
+                    }
+                    HStack {
+                        Text("SANTA MARIA de LOURDES")
+                            .font(.title)
+                    }
+                    HStack {
+                        Text("Sultanas, Dried Peach, Pine Nuts")
+                            .font(.subheadline)
+                    }
+                    
                 }
-                .font(.subheadline)
-                .foregroundColor(Color.black)
+                .padding(.horizontal)
+                
+                Divider()
+                
+                VStack (alignment: .leading){
+                    HStack {
+                        Text("Nylon Coffee Roaster")
+                    }
+                    .font(.headline)
+                    .foregroundColor(Color.black)
+                    
+                    HStack {
+                        Text("Espresso Roast")
+                        Spacer()
+                        Text("300g")
+                    }
+                    .font(.subheadline)
+                    .foregroundColor(Color.black)
+                }
+                .padding(.horizontal)
+                .font(.body)
+                
+                Divider()
+                
+                VStack(alignment:.leading) {
+                    HStack {
+                        Text("Producer")
+                        Spacer()
+                        Text("Octavio Pleralta")
+                    }
+                    HStack {
+                        Text("Variety")
+                        Spacer()
+                        Text("Red Catuai")
+                    }
+                    HStack {
+                        Text("Process")
+                        Spacer()
+                        Text("Honey Anaerobic")
+                    }
+                }
+                .padding(.horizontal)
+                .font(.body)
+                
+                Divider()
+                
+                VStack (alignment:.center){
+                    Button("Brew", action:brewCoffee)
+                }
             }
             .padding(.horizontal)
-            .font(.body)
-            
-            Divider()
-            
-            VStack(alignment:.leading) {
-                HStack {
-                    Text("Producer")
-                    Spacer()
-                    Text("Octavio Pleralta")
-                }
-                HStack {
-                    Text("Variety")
-                    Spacer()
-                    Text("Red Catuai")
-                }
-                HStack {
-                    Text("Process")
-                    Spacer()
-                    Text("Honey Anaerobic")
-                }
-            }
-            .padding(.horizontal)
-            .font(.body)
-            
-            
         }
-        .padding(.horizontal)
-        .overlay(
-            RoundedRectangle(cornerRadius:16)
-                .stroke(Color.gray, lineWidth:4)
-        )
+    }
+    func brewCoffee() {
+        print("Brew")
     }
 }
 

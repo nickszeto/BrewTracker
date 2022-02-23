@@ -12,8 +12,11 @@ struct ReceipeDetail: View {
         VStack (alignment:.leading) {
             Text("Brew")
                 .font(.title)
+            
             Text("Espresso")
                 .font(.title2)
+            
+            Divider()
             
             VStack {
                 HStack {

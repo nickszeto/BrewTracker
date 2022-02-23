@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+   
     var coffee: [Coffee] = []
     //var coffeeDetail : CoffeeDetail
     
@@ -21,19 +22,20 @@ struct ContentView: View {
                         HStack {
                             Image(systemName: "leaf")
                             VStack(alignment: .leading) {
-                                Text(coffee.name)
                                 Text(coffee.roaster)
+                                Text(coffee.name)
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                             }
                         }
                     }
-                    .navigationTitle(Text("Coffee Beans"))
+                    .navigationTitle(Text("Coffee Roasters"))
+                    
                     
                 }
             }
             .tabItem{
-                Label ("My Coffee", systemImage: "list.dash")
+                Label ("Roasters", systemImage: "list.dash")
             }
             CoffeeDetail()
                 .tabItem {
@@ -41,15 +43,13 @@ struct ContentView: View {
                 }	
             ReceipeDetail()
                 .tabItem {
-                    Label("Receipe", systemImage: "square.and.pencil")
+                    Label("Brew Receipe", systemImage: "square.and.pencil")
                 }
-        }
-        
-        
-        
-        
-        
-        
+            Account()
+                .tabItem {
+                    Label("Account", systemImage: "person.crop.circle")
+                }
+        }  
     }
 }
 
