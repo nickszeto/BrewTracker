@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CoffeeDetail: View {
-     
+    
+       
     var body: some View {
         
         NavigationView {
@@ -18,21 +19,22 @@ struct CoffeeDetail: View {
                     .scaledToFit()
                     .padding(.horizontal)
                     .clipShape(Circle())
+                    .offset(y: -60)
                 
                 VStack (alignment:.leading) {
                     HStack {
                         Text("Nicaragua")
                             .font(.subheadline)
+                            .foregroundColor(.gray)
                     }
                     HStack {
-                        Text("SANTA MARIA de LOURDES")
+                        Text("Santa Maria De Lourdes")
                             .font(.title)
                     }
                     HStack {
                         Text("Sultanas, Dried Peach, Pine Nuts")
                             .font(.subheadline)
                     }
-                    
                 }
                 .padding(.horizontal)
                 
@@ -61,16 +63,19 @@ struct CoffeeDetail: View {
                 VStack(alignment:.leading) {
                     HStack {
                         Text("Producer")
+                            .bold()
                         Spacer()
                         Text("Octavio Pleralta")
                     }
                     HStack {
                         Text("Variety")
+                            .bold()
                         Spacer()
                         Text("Red Catuai")
                     }
                     HStack {
                         Text("Process")
+                            .bold()
                         Spacer()
                         Text("Honey Anaerobic")
                     }
@@ -79,10 +84,6 @@ struct CoffeeDetail: View {
                 .font(.body)
                 
                 Divider()
-                
-                VStack (alignment:.center){
-                    Button("Brew", action:brewCoffee)
-                }
             }
             .padding(.horizontal)
         }

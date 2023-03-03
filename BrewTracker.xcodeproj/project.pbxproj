@@ -16,6 +16,7 @@
 		A9C80674276C3D9200D1D61A /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80673276C3D9200D1D61A /* Coffee.swift */; };
 		A9C80676276CCA0100D1D61A /* CoffeeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */; };
 		A9C8067827720FC800D1D61A /* Brew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C8067727720FC800D1D61A /* Brew.swift */; };
+		A9FBF90D29B1C2CB009D048C /* CoffeeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FBF90C29B1C2CB009D048C /* CoffeeRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A9C80673276C3D9200D1D61A /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetail.swift; sourceTree = "<group>"; };
 		A9C8067727720FC800D1D61A /* Brew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brew.swift; sourceTree = "<group>"; };
+		A9FBF90C29B1C2CB009D048C /* CoffeeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				A96636B8277D5B5600A71C05 /* ReceipeDetail.swift */,
 				A9C80665276C324100D1D61A /* BrewTrackerApp.swift */,
 				A9C80667276C324100D1D61A /* ContentView.swift */,
+				A9FBF90C29B1C2CB009D048C /* CoffeeRow.swift */,
 				A9C80675276CCA0100D1D61A /* CoffeeDetail.swift */,
 				A9C80673276C3D9200D1D61A /* Coffee.swift */,
 				A9C8067727720FC800D1D61A /* Brew.swift */,
@@ -154,6 +157,7 @@
 			files = (
 				A9C8067827720FC800D1D61A /* Brew.swift in Sources */,
 				A9C80676276CCA0100D1D61A /* CoffeeDetail.swift in Sources */,
+				A9FBF90D29B1C2CB009D048C /* CoffeeRow.swift in Sources */,
 				A9C80668276C324100D1D61A /* ContentView.swift in Sources */,
 				A9C80666276C324100D1D61A /* BrewTrackerApp.swift in Sources */,
 				A96636B9277D5B5600A71C05 /* ReceipeDetail.swift in Sources */,
@@ -297,6 +301,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

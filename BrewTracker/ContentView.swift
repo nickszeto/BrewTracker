@@ -16,31 +16,26 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            NavigationView {
+            NavigationStack {
                 List(coffee) { coffee in
-                    NavigationLink(destination: Text(coffee.name)) {
+                    NavigationLink(destination: CoffeeDetail()) {
                         HStack {
                             Image(systemName: "leaf")
                             VStack(alignment: .leading) {
-                                Text(coffee.roaster)
                                 Text(coffee.name)
+                                Text(coffee.roaster)
                                     .font(.subheadline)
                                     .foregroundColor(.secondary)
                             }
                         }
                     }
-                    .navigationTitle(Text("Coffee Roasters"))
-                    
-                    
+                    .navigationTitle(Text("Beans"))
                 }
             }
             .tabItem{
-                Label ("Roasters", systemImage: "list.dash")
+                Label ("Beans", systemImage: "list.dash")
             }
-            CoffeeDetail()
-                .tabItem {
-                    Label("Coffee Beans", systemImage: "leaf.circle")
-                }	
+            
             ReceipeDetail()
                 .tabItem {
                     Label("Brew Receipe", systemImage: "square.and.pencil")
