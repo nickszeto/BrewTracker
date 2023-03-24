@@ -17,17 +17,17 @@ struct ReceipeDetail: View {
     @State private var brewMethod: String = "Espresso"
     
     var body: some View {
-        VStack {
-            // Header
-            HStack {
-                Text("My Brew Receipe")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .padding()
-                Spacer()
-            }
-            
-            // Brew Type
+        
+            VStack {
+                // Header
+                HStack {
+                    Text("Brew")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding()
+                    Spacer()
+                }
+                // Brew Type
             HStack {
                 Text("Brew Method: ")
                 Spacer()
@@ -39,7 +39,6 @@ struct ReceipeDetail: View {
                         .pickerStyle(SegmentedPickerStyle())
             }
             .padding()
-            
             // Brew Time
             HStack {
                 Text("Brew Time (seconds):")
@@ -49,54 +48,54 @@ struct ReceipeDetail: View {
                 }
             }
             .padding()
-            
-            
-            
-            // Coffee Amount
-            HStack {
-                Text("Coffee Amount (g):")
-                Spacer()
-                Stepper(value: $coffeeAmount, in: 5...100, step: 1) {
-                    Text("\(Int(coffeeAmount))")
+                
+                // Coffee Amount
+                HStack {
+                    Text("Coffee Amount (g):")
+                    Spacer()
+                    Stepper(value: $coffeeAmount, in: 5...100, step: 1) {
+                        Text("\(Int(coffeeAmount))")
+                    }
                 }
-            }
-            .padding()
-            
-            // Yield Amount
-            HStack {
-                Text("Yield Amount (ml):")
-                Spacer()
-                Stepper(value: $yieldAmount, in: 100...1000, step: 10) {
-                    Text("\(Int(yieldAmount))")
+                .padding()
+                
+                // Yield Amount
+                HStack {
+                    Text("Yield Amount (ml):")
+                    Spacer()
+                    Stepper(value: $yieldAmount, in: 100...1000, step: 10) {
+                        Text("\(Int(yieldAmount))")
+                    }
                 }
-            }
-            .padding()
-            
-            // Grind Size
-            HStack {
-                Text("Grind Size:")
-                Spacer()
-                Picker(selection: $grindSize, label: Text("Grind Size")) {
-                    Text("Fine").tag("Fine")
-                    Text("Medium").tag("Medium")
-                    Text("Coarse").tag("Coarse")
+                .padding()
+                
+                // Grind Size
+                HStack {
+                    Text("Grind Size:")
+                    Spacer()
+                    Picker(selection: $grindSize, label: Text("Grind Size")) {
+                        Text("Fine").tag("Fine")
+                        Text("Medium").tag("Medium")
+                        Text("Coarse").tag("Coarse")
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
                 }
-                .pickerStyle(SegmentedPickerStyle())
-            }
-            .padding()
+                .padding()
+                
+                // Start Button
+                Button(action: {
+                    // Start brewing coffee
+                }) {
+                    Text("Start")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding()
+                }
+        
             
-            // Start Button
-            Button(action: {
-                // Start brewing coffee
-            }) {
-                Text("Start")
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding()
-            }
         }
     }
 }

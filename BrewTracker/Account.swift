@@ -16,7 +16,7 @@ struct Account: View {
     @State private var numberOfLikes = 1
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section(header: Text("Personal Details")) {
                     TextField("First Name", text: $firstName)

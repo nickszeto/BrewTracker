@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A96636B9277D5B5600A71C05 /* ReceipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96636B8277D5B5600A71C05 /* ReceipeDetail.swift */; };
 		A975E2BE27C60833006967E4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A975E2BD27C60833006967E4 /* Account.swift */; };
+		A979951129CB0DC0003FF93A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979951029CB0DC0003FF93A /* User.swift */; };
 		A9C80666276C324100D1D61A /* BrewTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80665276C324100D1D61A /* BrewTrackerApp.swift */; };
 		A9C80668276C324100D1D61A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C80667276C324100D1D61A /* ContentView.swift */; };
 		A9C8066A276C324100D1D61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C80669276C324100D1D61A /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		A96636B8277D5B5600A71C05 /* ReceipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeDetail.swift; sourceTree = "<group>"; };
 		A975E2BD27C60833006967E4 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		A979951029CB0DC0003FF93A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9C80662276C324100D1D61A /* BrewTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrewTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C80665276C324100D1D61A /* BrewTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTrackerApp.swift; sourceTree = "<group>"; };
 		A9C80667276C324100D1D61A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A975E2BD27C60833006967E4 /* Account.swift */,
+				A979951029CB0DC0003FF93A /* User.swift */,
 				A96636B8277D5B5600A71C05 /* ReceipeDetail.swift */,
 				A9C80665276C324100D1D61A /* BrewTrackerApp.swift */,
 				A9C80667276C324100D1D61A /* ContentView.swift */,
@@ -160,6 +163,7 @@
 				A9FBF90D29B1C2CB009D048C /* CoffeeRow.swift in Sources */,
 				A9C80668276C324100D1D61A /* ContentView.swift in Sources */,
 				A9C80666276C324100D1D61A /* BrewTrackerApp.swift in Sources */,
+				A979951129CB0DC0003FF93A /* User.swift in Sources */,
 				A96636B9277D5B5600A71C05 /* ReceipeDetail.swift in Sources */,
 				A9C80674276C3D9200D1D61A /* Coffee.swift in Sources */,
 				A975E2BE27C60833006967E4 /* Account.swift in Sources */,

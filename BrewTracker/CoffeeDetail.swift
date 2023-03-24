@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct CoffeeDetail: View {
     
        
     var body: some View {
-        
         NavigationView {
             VStack (alignment: .leading){
                 Image("BuenaVista")
@@ -20,6 +20,7 @@ struct CoffeeDetail: View {
                     .padding(.horizontal)
                     .clipShape(Circle())
                     .offset(y: -60)
+                    .shadow(radius: 10, y: 20)
                 
                 VStack (alignment:.leading) {
                     HStack {

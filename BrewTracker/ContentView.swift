@@ -12,9 +12,11 @@ struct ContentView: View {
    
     var coffee: [Coffee] = []
     //var coffeeDetail : CoffeeDetail
+    @State private var searchText = ""
+    @State private var selectedTab = 1
     
     var body: some View {
-        
+    
         TabView {
             NavigationStack {
                 List(coffee) { coffee in
@@ -30,21 +32,33 @@ struct ContentView: View {
                         }
                     }
                     .navigationTitle(Text("Beans"))
+                    
+                }
+                .searchable(text: $searchText)
+                .toolbar {
+                    ToolbarItem (placement:.navigationBarTrailing){
+                        Button (action: {} ) {
+                            Image(systemName: "person.fill")
+                                .foregroundColor(.blue)
+                        }
+                    }
                 }
             }
             .tabItem{
                 Label ("Beans", systemImage: "list.dash")
             }
-            
+            //Tab 2
             ReceipeDetail()
                 .tabItem {
-                    Label("Brew Receipe", systemImage: "square.and.pencil")
+                    Label("Brew", systemImage: "square.and.pencil")
                 }
-            Account()
+            //Tab 3 - User
+            User()
                 .tabItem {
-                    Label("Account", systemImage: "person.crop.circle")
-                }
-        }  
+                    Label("Barista", systemImage: "person.crop.circle")
+            }
+        }
+        .accentColor(.brown)
     }
 }
 
