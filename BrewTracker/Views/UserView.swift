@@ -6,9 +6,7 @@
 //
 
 import SwiftUI
-
-
-    struct User: View {
+    struct UserView: View {
         @State var firstName = "User"
         @State var lastName = "lastName"
         @State var nameHandler = "barista"
@@ -17,26 +15,26 @@ import SwiftUI
             NavigationStack {
                 VStack (alignment: .leading) {
                     
-                    HStack (spacing: 100) {
+                    HStack {
                         //Profile Picture
-                        Image(systemName: "person.circle")
+                        Image(systemName: "person.circle.fill")
                             .resizable()
                             .scaledToFit()
                             .padding(.horizontal)
                             .frame(width: 80, height: 80)
+                            .foregroundColor(.brown)
                         
                         VStack (alignment:.leading){
-                            HStack{
-                                Text("\(firstName)")
-                                Text("\(lastName)")
-                                    
-                            }
-                            .font(.title)
+                            
+                            Text("\(firstName)")
+                                .font(.title)
                             Text("@\(nameHandler)")
                                 .font(.subheadline)
                                 .foregroundColor(.brown)
                         }
+                    
                     }
+                    
                     
                     Form {
                         Section {
@@ -47,10 +45,10 @@ import SwiftUI
                         }
                         
                         Section {
-                            Label ("Coffee Profile",systemImage: "heart")
+                            Label ("Taste Profile",systemImage: "heart")
                             Label ("Roasters", systemImage: "cup.and.saucer")
                         } header: {
-                            Text("Taste Profile")
+                            Text("Coffee Profile")
                         }
                         
                         Section {
@@ -61,13 +59,17 @@ import SwiftUI
                         }
                     }
                 }
-                .navigationTitle("Barista Profile")
+                .navigationTitle("Profile")
+                .navigationBarTitleDisplayMode(.automatic)
+                
                 .toolbar {
-                    ToolbarItem {
+                    ToolbarItem (placement: .navigationBarTrailing) {
                         Button (action: {} ) {
                             Text("Edit")
                         }
                     }
+                    
+
                 }
             }
         }
@@ -75,8 +77,8 @@ import SwiftUI
 
 
 
-struct User_Previews: PreviewProvider {
+struct UserView_Previews: PreviewProvider {
     static var previews: some View {
-        User()
+        UserView()
     }
 }
